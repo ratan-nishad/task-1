@@ -153,7 +153,7 @@ No reply is received.
 This indicates the port may be filtered.
 <img width="1280" height="605" alt="Screenshot_2026-02-15_08-38-39" src="https://github.com/user-attachments/assets/1e2704b2-fa56-40b7-8307-8e82b6ccd3bd" />
 
-7. Identify Security Risks
+Identify Security Risks
 
 High Risk Ports:
 
