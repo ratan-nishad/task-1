@@ -1,35 +1,26 @@
  INTERNSHIP  task  REPORT 1
 
-1. Learn to discover open ports on devices in your local network to understand
+ 🛰 Task 1: Scan Local Network for Open Ports
+🎯 Objective
 
-To discover open ports on devices in your local network during a pentest, start by identifying live hosts, then scan for open TCP/UDP ports. Here's a step-by-step approach using common tools (assuming you're on Kali Linux or a similar pentest distro with these pre-installed).
+The objective of this task is to discover devices connected to the local network and identify their open ports in order to understand network exposure and potential security risks.
 
-1. Network Reconnaissance: Find Live Hosts
+Network scanning is a fundamental reconnaissance step in cybersecurity. It helps in identifying active systems, running services, and possible entry points that attackers may exploit.
 
-Use nmap for host discovery on your local subnet (e.g., 192.168.1.0/24). This pings and scans for common ports to find active devices without a full port scan yet.
+🛠 Tools Used
+🔹 Nmap
 
-sudo nmap -sn 192.168.1.0/24
+Nmap is a powerful network scanning tool used to:
 
-sudo nmap -sn: Ping scan only (no port scan).
-  
-Replace 192.168.1.0/24 with your subnet (find it via ip route or ifconfig).
-Output shows live IPs, MAC addresses, and vendors (e.g., "192.168.1.10 (Router Manufacturer)").
+discover active devices on a network
 
-For stealthier scans or ARP-only (faster on local nets):
- 
+identify open ports
 
+detect running services
 
-2. Port Scanning: Find Open Ports
+assist in security assessment
 
-Once you have target IPs (e.g., 192.168.1.10), scan ports. Start basic, escalate as needed.
-
-Quick TCP SYN scan (stealthy, root required):
-
-sudo nmap -sS –sV  192.168.1.10
-  
-•	-sS: SYN scan (half-open, doesn't complete TCP handshake).
-•	-p-: All 65k ports (don't limit to top 1000 unless time-constrained).
-
+It is widely used by cybersecurity professionals and ethical hackers.
 
 
 
