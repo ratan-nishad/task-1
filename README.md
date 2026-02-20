@@ -24,6 +24,7 @@ It is widely used by cybersecurity professionals and ethical hackers.
 
 
 🔌 What is a Port?
+
 A port is a communication endpoint that represents a service running on a system.
 A port is a 16-bit number (0-65535) that acts like a "door" or "address label" on a device, telling the operating system which application/service should handle incoming network traffic.
 Examples:
@@ -36,8 +37,7 @@ Port 443 → secure web traffic
 
 If a port is open, the service is accepting connections.
 
-
-1. Network Reconnaissance: Find Live Hosts
+Network Reconnaissance: Find Live Hosts
 
 Use nmap for host discovery on your local subnet (e.g., 10.25.213.237/24). This pings and scans for common ports to find active devices without a full port scan yet.
 -sn: Ping scan only (no port scan).
@@ -45,7 +45,7 @@ Replace 192.168.1.0/24 with your subnet (find it via ip route or ifconfig). Outp
 For stealthier scans or ARP-only (faster on local nets):
 <img width="823" height="126" alt="Screenshot_2026-02-15_06-10-53" src="https://github.com/user-attachments/assets/634536cb-a6c4-4b81-959f-9b202f8570bb" />
 
-2. Port Scanning: Find Open Ports
+Port Scanning: Find Open Ports
 
 Once you have target IPs (e.g., 10.25.213.237), scan ports. Start basic, escalate as needed.
 
@@ -168,7 +168,7 @@ Medium Risk:
   80/443: Vulnerable web apps (SQLi, XSS, RCE)
   8080: Often development servers with weak auth
 
-  Interview Questions:
+Interview Questions:
 
 1️⃣ What is an open port?
  An open port is a network endpoint that accepts incoming connections.
